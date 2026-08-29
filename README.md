@@ -1,6 +1,6 @@
 # 🌱 AgroSearch - Motor de Busca Inteligente
 
-O **AgroSearch** é um protótipo de motor de busca textual desenvolvido em **Python + Streamlit**, com o objetivo de aplicar conceitos de **Recuperação de Informação** e **Processamento de Linguagem Natural (PLN)**.
+O **AgroSearch** é um protótipo de motor de busca textual desenvolvido em **Python + Streamlit**, com o objetivo de aplicar conceitos de **Recuperação de Informação** e **Processamento Textual**.
 
 O sistema trabalha com uma coleção de documentos relacionados à agricultura e permite que o usuário realize consultas textuais. A partir da consulta, o AgroSearch processa os textos, constrói um índice invertido, calcula a relevância dos documentos utilizando **TF-IDF** e apresenta um ranking do documento mais relevante para o menos relevante.
 
