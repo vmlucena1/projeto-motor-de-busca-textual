@@ -1,5 +1,5 @@
 # AgroSearch.py
-# Motor de Busca Inteligente para AgroTech Solutions
+# Motor de Busca Inteligente
 # Projeto Acadêmico - Recuperação de Informação e PLN
 #
 # Relação com as Práticas do Professor:
@@ -444,10 +444,7 @@ st.divider()
 # SEÇÃO 1 - BASE DE DOCUMENTOS
 # ============================================================
 st.subheader("Seção 1 - Base de Documentos")
-st.markdown(
-    "Os cinco documentos abaixo compõem a coleção da **AgroTech Solutions** "
-    "e estão cadastrados diretamente no código, sem uploads ou banco de dados."
-)
+
 
 cols_docs = st.columns(2)
 for i, (id_doc, texto) in enumerate(documentos.items()):
