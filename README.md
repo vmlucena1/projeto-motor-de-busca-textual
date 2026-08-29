@@ -10,7 +10,6 @@ O sistema trabalha com uma coleção de documentos relacionados à agricultura e
 
 - **Instituição:** UNIPÊ
 - **Disciplina:** Tendências em Ciência da Computação
-- **Atividade:** Laboratório Prático 04 - Desafio Integrador
 - **Professor:** Me. Ricardo Roberto de Lima
 - **Projeto:** AgroSearch - Motor de Busca Inteligente
 
