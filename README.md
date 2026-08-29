@@ -1,8 +1,12 @@
-# 🌱 AgroSearch - Motor de Busca Inteligente
+# 🌱 AgroSearch - Motor de Busca Textual
 
-O **AgroSearch** é um protótipo de motor de busca textual desenvolvido em **Python + Streamlit**, com o objetivo de aplicar conceitos de **Recuperação de Informação** e **Processamento Textual**.
+O **AgroSearch** é um protótipo de motor de busca textual desenvolvido em **Python e Streamlit** como parte da disciplina de Tendências em Ciência da Computação.
 
-O sistema trabalha com uma coleção de documentos relacionados à agricultura e permite que o usuário realize consultas textuais. A partir da consulta, o AgroSearch processa os textos, constrói um índice invertido, calcula a relevância dos documentos utilizando **TF-IDF** e apresenta um ranking do documento mais relevante para o menos relevante.
+O projeto foi desenvolvido para aplicar conceitos de **Recuperação de Informação e processamento textual**, explorando técnicas utilizadas para preparar, indexar e classificar documentos por relevância de acordo com uma consulta.
+
+O sistema trabalha com uma coleção de documentos relacionados à agricultura. A partir de uma pesquisa realizada pelo usuário, os textos passam por etapas de pré-processamento, os termos são organizados em um índice invertido e os documentos são avaliados de acordo com sua relevância para a consulta.
+
+Para isso, o AgroSearch utiliza técnicas como **TF-IDF** e **similaridade de cosseno**, permitindo representar os documentos numericamente, atribuir importância aos termos e comparar a consulta com o conteúdo disponível.
 
 ---
 
@@ -11,21 +15,35 @@ O sistema trabalha com uma coleção de documentos relacionados à agricultura e
 - **Instituição:** UNIPÊ
 - **Disciplina:** Tendências em Ciência da Computação
 - **Professor:** Me. Ricardo Roberto de Lima
-- **Projeto:** AgroSearch - Motor de Busca Inteligente
+- **Projeto:** AgroSearch - Motor de Busca Textual
 
 ---
 
 ## 🎯 Objetivo
 
-O objetivo do projeto é integrar, em uma única aplicação, os principais conceitos estudados nas práticas anteriores da disciplina:
+O objetivo do projeto é reunir, em uma única aplicação, conceitos fundamentais de **Recuperação de Informação e processamento textual**, permitindo visualizar as principais etapas envolvidas no funcionamento de um motor de busca.
 
-1. Pré-processamento de texto;
-2. Construção de Índice Invertido;
-3. Cálculo de TF-IDF;
-4. Ranqueamento de documentos;
-5. Similaridade de Cosseno, como funcionalidade bônus.
+Os principais conceitos implementados são:
 
-A aplicação foi desenvolvida de forma didática, permitindo visualizar as diferentes etapas do processo de recuperação de informação.
+1. **Pré-processamento textual**
+   - Tokenização
+   - Normalização
+   - Remoção de stopwords
+   - Stemming
+
+2. **Índice invertido**
+   - Estrutura responsável por relacionar cada termo aos documentos nos quais ele aparece.
+
+3. **TF, DF, IDF e TF-IDF**
+   - Métricas utilizadas para analisar a frequência e a importância dos termos dentro da coleção de documentos.
+
+4. **Ranking por relevância**
+   - Ordenação dos documentos de acordo com sua relação com a consulta realizada pelo usuário.
+
+5. **Similaridade de cosseno**
+   - Comparação entre a representação vetorial da consulta e dos documentos para medir o grau de similaridade entre eles.
+
+A aplicação também possui uma interface desenvolvida com **Streamlit**, permitindo acompanhar de forma didática as diferentes etapas do processo de busca.
 
 ---
 
@@ -36,9 +54,12 @@ O fluxo principal do AgroSearch é:
 ```text
 Documentos
     ↓
-Pré-processamento
+Pré-processamento textual
     ↓
-Índice Invertido
+Tokenização, normalização,
+remoção de stopwords e stemming
+    ↓
+Índice invertido
     ↓
 Consulta do usuário
     ↓
@@ -46,6 +67,6 @@ Pré-processamento da consulta
     ↓
 TF / DF / IDF / TF-IDF
     ↓
-Pontuação dos documentos
+Cálculo de relevância
     ↓
-Ranking por relevância
+Ranking dos documentos
